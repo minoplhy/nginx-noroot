@@ -29,14 +29,14 @@ tar xzf pcre-8.45.tar.gz
 # Build Nginx
 cd ~/nginx_build
 if [[ -f "/usr/bin/curl" ]]; then
-    curl -L https://nginx.org/download/nginx-1.21.6.tar.gz --output nginx-1.21.6.tar.gz
+    curl -L https://nginx.org/download/nginx-1.23.1.tar.gz --output nginx-1.23.1.tar.gz
 elif [[ -f "/usr/bin/wget" ]]; then
-    wget https://nginx.org/download/nginx-1.21.6.tar.gz -O nginx-1.21.6.tar.gz
+    wget https://nginx.org/download/nginx-1.23.1.tar.gz -O nginx-1.23.1.tar.gz
 else
     echo "Required Dependencies for download Nginx doesn't exist"
 fi
 
-tar xzf nginx-1.21.6.tar.gz && cd nginx-1.21.6
+tar xzf nginx-1.23.1.tar.gz && cd nginx-1.23.1
 
 if [[ -f "/usr/bin/curl" ]]; then
     curl https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/configure.sh | bash
