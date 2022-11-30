@@ -12,5 +12,6 @@ curl https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/build.sh | bas
 
 ### using Wget
 ```
-wget https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/build.sh | ./build.sh
+wget https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/build.sh
+chmod +x build.sh && ./build.sh
 ```
