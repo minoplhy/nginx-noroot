@@ -26,14 +26,14 @@ else
 fi
 tar xzf pcre-8.45.tar.gz
 
-# Build Openssl
+# Get OpenSSL
 cd ~/nginx_build
 if [[ -f "/usr/bin/curl" ]]; then
     curl -L https://www.openssl.org/source/openssl-3.0.7.tar.gz --output openssl-3.0.7.tar.gz
 elif [[ -f "/usr/bin/wget" ]]; then
     wget https://www.openssl.org/source/openssl-3.0.7.tar.gz -O openssl-3.0.7.tar.gz
 else
-    echo "Required Dependencies for download Nginx doesn't exist"
+    echo "Required Dependencies for download OpenSSL doesn't exist"
 fi
 tar xzf openssl-3.0.7.tar.gz
 
