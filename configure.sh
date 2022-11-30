@@ -13,6 +13,7 @@ User_home=~
 --http-proxy-temp-path=$User_home/nginx-settings/temp/proxy \
 --http-scgi-temp-path=$User_home/nginx-settings/temp/scgi \
 --http-uwsgi-temp-path=$User_home/nginx-settings/temp/uwsgi \
+--with-openssl=$Build_directory/openssl-3.0.7 \
 --with-compat \
 --with-debug \
 --with-http_ssl_module \
@@ -38,4 +39,4 @@ User_home=~
 --with-stream_ssl_module \
 --with-stream_ssl_preread_module \
 --with-pcre=$Build_directory/pcre-8.45 \
---with-zlib=$Build_directory/zlib-1.2.12
+--with-zlib=$Build_directory/zlib-1.2.13
