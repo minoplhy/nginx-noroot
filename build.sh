@@ -52,7 +52,8 @@ tar xzf nginx-1.23.2.tar.gz && cd nginx-1.23.2
 if [[ -f "/usr/bin/curl" ]]; then
     curl https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/configure.sh | bash
 elif [[ -f "/usr/bin/wget" ]]; then
-    wget https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/configure.sh | ./configure.sh
+    wget https://raw.githubusercontent.com/minoplhy/nginx-noroot/main/configure.sh 
+    ./configure.sh
 else
     echo "Required Dependencies for download configure script doesn't exist"
 fi
